@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Daily Pocket Adventures</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <!-- ===== Header ===== -->
+  <header class="hero" id="top">
+    <nav class="nav container">
+      <a class="logo" href="#top">DPA</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#cards">Cards</a></li>
+        <li><a href="#features">Highlights</a></li>
+        <li><a href="#media">Media</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero-inner container">
+      <h1 class="headline">Turn tiny quests into <span class="txt-gradient">career momentum</span>.</h1>
+      <p class="subhead">Daily Pocket Adventures are card sets packed with playful challenges that build skills and confidence.</p>
+      <div class="cta-row">
+        <a class="btn primary" href="#cards">Shop card sets</a>
+        <a class="btn ghost" href="#about">How it works</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== About Section ===== -->
+  <section id="about" class="section container">
+    <h2>About</h2>
+    <p><strong>Daily Pocket Adventures</strong> are bite-size missions that nudge you to try new things and show your value in fun ways.</p>
+  </section>
+
+  <!-- ===== Cards Section ===== -->
+  <section id="cards" class="section container">
+    <h2>Cards</h2>
+    <div class="slider">
+      <article class="card product">
+        <h3>Starter Deck</h3>
+        <p>30 quick wins to kickstart your visibility.</p>
+        <button class="btn small add-to-cart" data-product="Starter Deck">Add to cart</button>
+      </article>
+      <article class="card product">
+        <h3>Crazy Ideas Kit</h3>
+        <p>Daring micro-adventures for creative sprints.</p>
+        <button class="btn small add-to-cart" data-product="Crazy Ideas Kit">Add to cart</button>
+      </article>
+    </div>
+    <div class="cart card">
+      <h3>Your Cart</h3>
+      <ul id="cart-items"></ul>
+      <p>Total: <span id="cart-total">€0</span></p>
+    </div>
+  </section>
+
+  <!-- ===== Features Section ===== -->
+  <section id="features" class="section container">
+    <h2>Highlights</h2>
+    <div class="accordion">
+      <button class="acc-item">Signal over noise</button>
+      <div class="acc-panel"><p>Create tangible artifacts that show your skills.</p></div>
+      <button class="acc-item">Momentum made easy</button>
+      <div class="acc-panel"><p>30–45 minutes each — enough to feel progress.</p></div>
+    </div>
+  </section>
+
+  <!-- ===== Contact Section ===== -->
+  <section id="contact" class="section container">
+    <h2>Contact</h2>
+    <form id="contact-form">
+      <input id="name" type="text" placeholder="Your name" required />
+      <input id="email" type="email" placeholder="Your email" required />
+      <textarea id="message" placeholder="Your message"></textarea>
+      <button type="submit" class="btn primary">Send</button>
+      <p id="form-note"></p>
+    </form>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <p>© <span id="year"></span> Daily Pocket Adventures</p>
+  </footer>
+
+  <script src="assets/main.js"></script>
+</body>
+</html>
